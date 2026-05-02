@@ -1,0 +1,16 @@
+import random
+
+print("Add your friends to the list")
+friends = []
+
+while True:
+  friend = input("Enter a friend's name (or 'done' to stop): ")
+  if friend.lower() == "done":
+    break
+  friends.append(friend)
+
+if len(friends) == 0:
+  print("No friends added!")
+else:
+  victim = random.choice(friends)
+  print(f"{victim} has to foot the bill this time")
